@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+// process.env > cra 로 프로젝트 연 경우
+const API_KEY = import.meta.env.REACT_APP_API_KEY;
 
 const api = axios.create({
 	baseURL: "https://api.themoviedb.org/3",
