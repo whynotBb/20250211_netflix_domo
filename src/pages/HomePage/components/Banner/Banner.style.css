@@ -1,0 +1,21 @@
+.banner {
+	height: 56vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	display: flex;
+	align-items: flex-end;
+}
+.banner::before {
+	content: "";
+	background: linear-gradient(to top, black, transparent);
+	position: absolute;
+	left: 0;
+	height: 56vh;
+	width: 100%;
+}
+.banner div {
+	z-index: 2;
+	padding: 20px;
+}
