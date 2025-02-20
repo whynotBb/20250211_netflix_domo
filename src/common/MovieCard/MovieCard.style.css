@@ -1,0 +1,36 @@
+.slide_bx {
+	position: relative;
+	cursor: pointer;
+}
+
+.slide_bx img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.hover_bx {
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 16px;
+	word-break: keep-all;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	transition: all 0.3s;
+}
+.hover_bx .overview {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.slide_bx:hover .hover_bx {
+	bottom: 0;
+}

@@ -1,7 +1,8 @@
 import axios from "axios";
 
 // process.env > cra 로 프로젝트 연 경우
-const API_KEY = import.meta.env.REACT_APP_API_KEY;
+//vite 로 프로젝트 만든 경우, 환경변수는 import.meta.env. 로 가져올 수 있고, 변수 명 앞에 VITE_로 시작해야한다
+const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
 const api = axios.create({
 	baseURL: "https://api.themoviedb.org/3",
@@ -10,6 +11,7 @@ const api = axios.create({
 		Authorization: `Bearer ${API_KEY}`,
 	},
 });
+
 // 요청 인터셉터 추가하기
 axios.interceptors.request.use(
 	function (config) {

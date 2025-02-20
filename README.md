@@ -11,3 +11,6 @@ npm i axios
 npm i @tanstack/react-query
 
 npm i @tanstack/react-query-devtools
+
+npm install react-multi-carousel --save
+npm i swiper

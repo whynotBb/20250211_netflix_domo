@@ -3,10 +3,12 @@ body {
 	width: 100%;
 	max-width: 1920px;
 	margin: 0 auto;
+	color: #eee;
 }
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 ul,
 li {
