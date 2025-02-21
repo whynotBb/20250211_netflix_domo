@@ -34,3 +34,15 @@
 .slide_bx:hover .hover_bx {
 	bottom: 0;
 }
+.genre_wr {
+	display: flex;
+	gap: 5px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.genre_wr li {
+	line-height: 26px;
+	background: purple;
+	padding: 0 10px;
+	border-radius: 100px;
+}

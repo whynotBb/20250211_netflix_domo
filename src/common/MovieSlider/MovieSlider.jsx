@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import MovieCard from "../MovieCard/MovieCard";
 import "swiper/css";
 import "swiper/css/pagination";
+import "./MovieSlider.style.css";
 const MovieSlider = ({ title, movies, responsive }) => {
 	return (
 		<div>
