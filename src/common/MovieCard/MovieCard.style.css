@@ -1,6 +1,7 @@
 .slide_bx {
 	position: relative;
 	cursor: pointer;
+	overflow: hidden;
 }
 
 .slide_bx img {
