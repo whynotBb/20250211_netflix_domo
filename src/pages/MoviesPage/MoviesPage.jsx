@@ -10,11 +10,13 @@ import { useSearchMovieQuery } from "../../hooks/useSearchMovie";
 import MovieCard from "../../common/MovieCard/MovieCard";
 
 import "./MoviesPage.style.css";
+import { useState } from "react";
 
 const MoviesPage = () => {
 	const [query, setQuery] = useSearchParams();
 	const keyword = query.get("q");
-	const { data, isLoading, isError, error } = useSearchMovieQuery({ keyword });
+	const [page, setPage] = useState(1);
+	const { data, isLoading, isError, error } = useSearchMovieQuery({ keyword, page });
 	console.log("search", data);
 	if (isLoading) {
 		return <h1>loading</h1>;
